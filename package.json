@@ -2,5 +2,8 @@
   "devDependencies": {
     "sass": "^1.69.3",
     "typescript-plugin-css-modules": "^5.0.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
