@@ -3,10 +3,12 @@ import Buscador from './Buscador';
 import styles from './Cardapio.module.scss';
 import { ReactComponent as Logo } from "assets/logo.svg";
 import Filtros from './Filtros';
+import Ordernador from './Ordernador';
 
 const Cardapio = () => {
   const [ busca, setBusca ] = useState('');
   const [ filtro, setFiltro ] = useState<number | null>(null);
+  const [ ordenador, setOrdenador ] = useState("");
 
   return (
     <main>
@@ -27,6 +29,7 @@ const Cardapio = () => {
         />
         <div className={styles.cardapio__filtros}>
           <Filtros filtro={filtro} setFiltro={setFiltro}/>
+          <Ordernador ordenador={ordenador} setOrdenador={setOrdenador}/>
         </div>
       </section>
     </main>
