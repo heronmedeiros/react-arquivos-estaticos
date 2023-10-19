@@ -1,6 +1,5 @@
 import cardapio from './itens.json';
 import Item from './Item';
-
 import styles from './Itens.module.scss';
 
 const Itens = () => {
@@ -9,7 +8,7 @@ const Itens = () => {
       {
         cardapio.map( item => (
           <div>
-            <Item key={item.id}/>
+            <Item key={item.id} {...item}/>
           </div>
         ))
       }
