@@ -32,7 +32,7 @@ const Cardapio = () => {
           <Filtros filtro={filtro} setFiltro={setFiltro}/>
           <Ordernador ordenador={ordenador} setOrdenador={setOrdenador}/>
         </div>
-        <Itens />
+        <Itens busca={busca} filtro={filtro} ordenador={ordenador}/>
       </section>
     </main>
   )
